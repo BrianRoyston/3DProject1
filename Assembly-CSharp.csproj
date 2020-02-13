@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemySpawnInfo.cs" />
+    <Compile Include="Assets\Scripts\Enemy\FireEnemyController.cs" />
     <Compile Include="Assets\Scripts\Misc\DestroyInXSeconds.cs" />
     <Compile Include="Assets\Scripts\Misc\HealthPill.cs" />
     <Compile Include="Assets\Scripts\Misc\HUDController.cs" />

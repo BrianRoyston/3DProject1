@@ -4828,4 +4828,4 @@ MonoBehaviour:
   m_HealthPillDropRate: 0.5
   m_HealthPill: {fileID: 920979506450168077, guid: 7b2795f7e1adcc447b5f2b1d9fec4c0d,
     type: 3}
-  m_Score: 2
+  m_Score: 3

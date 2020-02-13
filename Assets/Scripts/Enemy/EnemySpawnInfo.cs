@@ -28,6 +28,17 @@ public class EnemySpawnInfo
     }
 
     [SerializeField]
+    [Tooltip("The prefab of the baby fire")]
+    private GameObject m_BabyFire;
+    public GameObject BabyFire
+    {
+        get
+        {
+            return m_BabyFire;
+        }
+    }
+
+    [SerializeField]
     [Tooltip("The number of seconds before the next enemy is spawned")]
     private float m_TimeToNextSpawn;
     public float TimeToNextSpawn

@@ -78,6 +78,10 @@ public class EnemyController : MonoBehaviour
         {
             other.GetComponent<PlayerController>().DecreaseHealth(m_Damage);
         }
+        if (other.CompareTag("AttackAbility"))
+        {
+            DecreaseHealth(4);
+        }
     }
     #endregion
 
@@ -88,11 +92,12 @@ public class EnemyController : MonoBehaviour
         if(p_currHealth <= 0)
         {
             ScoreManager.singleton.IncreaseScore(m_Score);
+            HUDController.singleton.IncreaseScore(m_Score);
             if (Random.value < m_HealthPillDropRate)
             {
                 Instantiate(m_HealthPill, transform.position, Quaternion.identity);
             }
-            Instantiate(m_DeathExplosion, transform.position, Quaternion.identity);
+            Instantiate(m_DeathExplosion, transform.position, Quaternion.identity);     
             Destroy(gameObject);
         }
        

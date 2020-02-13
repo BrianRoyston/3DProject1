@@ -20,6 +20,12 @@ public class HealthPill : MonoBehaviour
 
     #region
 
+    public void Start()
+    {
+        Rigidbody cc_Rb = GetComponent<Rigidbody>();
+        cc_Rb.MovePosition(new Vector3(cc_Rb.position.x,1,cc_Rb.position.z));
+    }
+    
     #endregion
 
     #region

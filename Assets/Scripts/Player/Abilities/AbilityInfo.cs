@@ -27,5 +27,17 @@ public class AbilityInfo
             return m_Range;
         }
     }
+
+    [SerializeField]
+    [Tooltip("If this is a radius attack, what is the radius")]
+    private int m_Radius;
+    public int Radius
+    {
+        get
+        {
+            return m_Radius;
+        }
+    }
+
     #endregion
 }

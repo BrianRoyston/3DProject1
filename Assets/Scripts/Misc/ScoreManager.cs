@@ -5,6 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager singleton;
+
     #region Private Variables
     private int m_CurrScore;
     #endregion
@@ -27,6 +28,7 @@ public class ScoreManager : MonoBehaviour
     public void IncreaseScore(int amount)
     {
         m_CurrScore += amount;
+       
     }
 
     private void UpdateHighScore()

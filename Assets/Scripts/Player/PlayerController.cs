@@ -76,10 +76,13 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+       
+        
     }
     #endregion
 
     #region Main Updates
+   
     private void Update()
     {
         if (p_FrozenTimer > 0)

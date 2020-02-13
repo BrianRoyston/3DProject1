@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - DestroyInXSeconds
     - EnemyController
     - EnemySpawner
+    - FireEnemyController
     - HUDController
     - HealthPill
     - LaserAttack
@@ -91,34 +92,40 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9854}
     - Class: 114
+      Script: {instanceID: 9916}
+    - Class: 114
       Script: {instanceID: 9966}
     - Class: 114
       Script: {instanceID: 10458}
     - Class: 114
       Script: {instanceID: 10604}
     - Class: 114
-      Script: {instanceID: 10844}
+      Script: {instanceID: 10836}
     - Class: 114
-      Script: {instanceID: 10852}
+      Script: {instanceID: 10846}
     - Class: 114
-      Script: {instanceID: 11112}
+      Script: {instanceID: 10854}
     - Class: 114
-      Script: {instanceID: 11500}
+      Script: {instanceID: 11114}
     - Class: 114
-      Script: {instanceID: 11624}
+      Script: {instanceID: 11504}
     - Class: 114
-      Script: {instanceID: 11824}
+      Script: {instanceID: 11628}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11814}
     - Class: 114
-      Script: {instanceID: 14852}
+      Script: {instanceID: 11830}
     - Class: 114
-      Script: {instanceID: 15096}
+      Script: {instanceID: 11884}
     - Class: 114
-      Script: {instanceID: 15932}
+      Script: {instanceID: 11958}
     - Class: 114
-      Script: {instanceID: 19010}
+      Script: {instanceID: 12020}
+    - Class: 114
+      Script: {instanceID: 14070}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -192,17 +199,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10458}
     - Class: 114
-      Script: {instanceID: 10870}
+      Script: {instanceID: 10872}
     - Class: 114
-      Script: {instanceID: 10938}
+      Script: {instanceID: 10940}
     - Class: 114
-      Script: {instanceID: 11316}
+      Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11500}
+      Script: {instanceID: 11352}
     - Class: 114
-      Script: {instanceID: 11948}
+      Script: {instanceID: 11504}
     - Class: 114
-      Script: {instanceID: 18250}
+      Script: {instanceID: 11958}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -544,6 +551,12 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
+      Hash: 02f3cbce2b929d08f5cabfc0136f9cb8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HealthPill
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -658,6 +671,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: c637bcae84199537272f5b3c7e7bf235
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuController
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: com.unity.multiplayer-hlapi.Runtime.dll
     namespaceName: UnityEngine.Networking
@@ -694,7 +713,7 @@ ScriptsOnlyBuild:
     className: BeforeAfterTestCommandState
   - hash:
       serializedVersion: 2
-      Hash: c1727bded45b79a7f114ba6174610f96
+      Hash: f44dec8ace6fed15e8abe6bf6e43431a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LaserAttack
@@ -730,6 +749,12 @@ ScriptsOnlyBuild:
     className: NetworkAnimator
   - hash:
       serializedVersion: 2
+      Hash: 55d2bc4e0459247318720cc35f49bad1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HUDController
+  - hash:
+      serializedVersion: 2
       Hash: df434544c9f7b33d1cc7e635b180d279
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -742,7 +767,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: c1727bded45b79a7f114ba6174610f96
+      Hash: f44dec8ace6fed15e8abe6bf6e43431a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MegoLaserAttack
@@ -764,6 +789,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreManager
   - hash:
       serializedVersion: 2
       Hash: e0ee4b3d4e27318934cc940a969d3d96
@@ -826,40 +857,22 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
+      Hash: f399325a6147db74c39cf8f69776b23b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemySpawner
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: 0219ecc6c2fc7d417cc3f56b485d4822
+      Hash: 79f40c4f323c3a7ddb7f0896c7e12d64
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: HUDController
-  - hash:
-      serializedVersion: 2
-      Hash: 02f3cbce2b929d08f5cabfc0136f9cb8
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: HealthPill
-  - hash:
-      serializedVersion: 2
-      Hash: 44f58ccf90d41e4ff6ebbe91bacbe996
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: EnemySpawner
-  - hash:
-      serializedVersion: 2
-      Hash: c637bcae84199537272f5b3c7e7bf235
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: MainMenuController
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: ScoreManager
+    className: FireEnemyController
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

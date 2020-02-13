@@ -15,6 +15,10 @@ public class LaserAttack : Ability
             {
                 hit.collider.GetComponent<EnemyController>().DecreaseHealth(m_Info.Power);
             }
+            if (hit.collider.CompareTag("FireEnemy"))
+            {
+                hit.collider.GetComponent<FireEnemyController>().DecreaseHealth(m_Info.Power);
+            }
         }
         var emitterShape = cc_Ps.shape;
         emitterShape.length = newLength;
